@@ -1,23 +1,6 @@
 {
   "actions": [
-    {
-      "id": "thermostat_night_mode",
-      "$filter": "capabilities=night_mode",
-      "title": {
-        "en": "Set night mode"
-      },
-      "titleFormatted": {
-        "en": "Set night mode to [[value]]"
-      },
-      "args": [
-        {
-          "name": "value",
-          "type": "checkbox",
-          "title": { "en": "Value" }
-        }
-      ]
-    },
-    {
+     {
       "id": "thermostat_frost_guard",
       "$filter": "capabilities=frost_guard",
       "title": {
@@ -25,23 +8,6 @@
       },
       "titleFormatted": {
         "en": "Set frost guard to [[value]]"
-      },
-      "args": [
-        {
-          "name": "value",
-          "type": "checkbox",
-          "title": { "en": "Value" }
-        }
-      ]
-    },
-    {
-      "id": "thermostat_eco_mode",
-      "$filter": "capabilities=eco_mode",
-      "title": {
-        "en": "Set eco mode"
-      },
-      "titleFormatted": {
-        "en": "Set eco mode to [[value]]"
       },
       "args": [
         {
@@ -68,89 +34,6 @@
         }
       ]
     },
-    {
-      "id": "thermostat_fan_swing_vertical",
-      "$filter": "capabilities=fan_swing_vertical",
-      "title": {
-        "en": "Set vertical fan swing"
-      },
-      "titleFormatted": {
-        "en": "Set vertical fan swing to [[value]]"
-      },
-      "args": [
-        {
-          "name": "value",
-          "type": "checkbox",
-          "title": { "en": "Value" }
-        }
-      ]
-    },
-    {
-      "id": "thermostat_fan_swing_horizontal",
-      "$filter": "capabilities=fan_swing_horizontal",
-      "title": {
-        "en": "Set horizontal fan swing"
-      },
-      "titleFormatted": {
-        "en": "Set horizontal fan swing to [[value]]"
-      },
-      "args": [
-        {
-          "name": "value",
-          "type": "checkbox",
-          "title": { "en": "Value" }
-        }
-      ]
-    },
-    {
-      "id": "thermostat_legacy_fan_speed",
-      "$filter": "capabilities=legacy_fan_speed",
-      "title": {
-        "en": "Set fan speed"
-      },
-      "titleFormatted": {
-        "en": "Set fan speed to [[value]]"
-      },
-      "args": [
-        {
-          "name": "value",
-          "type": "dropdown",
-          "title": { "en": "Value" },
-          "values": [
-            {
-              "id": "high",
-              "title": {
-                "en": "High"
-              }
-            },
-            {
-              "id": "middle",
-              "title": {
-                "en": "Middle"
-              }
-            },
-            {
-              "id": "low",
-              "title": {
-                "en": "Low"
-              }
-            },
-            {
-              "id": "closed",
-              "title": {
-                "en": "Closed"
-              }
-            },
-            {
-              "id": "auto",
-              "title": {
-                "en": "Auto"
-              }
-            }
-          ]
-        }
-      ]
-    }
   ],
   "conditions": [],
   "triggers": [
