@@ -20,43 +20,11 @@
     }
   },
   {
-    "$extends": "scaledProperty",
-    "id": "measure_humidity_scaling",
-    "label": {
-      "en": "Measured Humidity Scale"
-    },
-    "hint": {
-      "en": "By how much the humidity measured by the device is scaled."
-    }
-  },
-  {
-    "$extends": "scaledProperty",
-    "id": "measure_power_scaling",
-    "label": {
-      "en": "Measured Power Scale"
-    },
-    "hint": {
-      "en": "By how much the power measured by the device is scaled."
-    }
-  },
-  {
     "type": "group",
     "label": {
       "en": "NOTE: Some settings are not supported by every device."
     },
     "children": [
-      {
-        "id": "capacity_set",
-        "type": "dropdown",
-        "label": {
-          "en": "Power Setting"
-        },
-        "values": [
-          { "id": "2000W", "label": { "en": "2000 W" } },
-          { "id": "3000W", "label": { "en": "3000 W" } },
-          { "id": "5000W", "label": { "en": "5000 W" } }
-        ]
-      },
       {
         "id": "temp_correction",
         "type": "number",
@@ -72,8 +40,8 @@
           "en": "Sensor Selection"
         },
         "values": [
-          { "id": "in", "label": { "en": "Internal" } },
-          { "id": "out", "label": { "en": "3000 W" } }
+          { "id": "room", "label": { "en": "Room" } },
+          { "id": "floor", "label": { "en": "Floor" } }
         ]
       },
       {
