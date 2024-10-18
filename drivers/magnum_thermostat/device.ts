@@ -76,8 +76,6 @@ module.exports = class TuyaOAuth2DeviceThermostat extends TuyaOAuth2Device {
     for (const homeyCapability of [
       'target_temperature',
       'measure_temperature',
-      'measure_humidity',
-      'measure_power',
     ] as const) {
       await Util.handleScaleSetting(this, event, `${homeyCapability}_scaling`, homeyCapability).catch(this.error);
     }
