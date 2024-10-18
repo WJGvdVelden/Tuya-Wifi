@@ -79,20 +79,9 @@ module.exports = class TuyaOAuth2DriverThermostat extends TuyaOAuth2Driver {
       props.store.tuya_capabilities.push('work_state');
       props.capabilities.push('thermostat_mode');
       const values = generateThermostatModeTitles([
-        'cold',
-        'hot',
-        'wind',
-        'comfortable',
-        'energy',
-        'auto',
-        'holiday',
-        'eco',
         'manual',
-        'sleep',
-        'dry',
         'program',
-        'floor_heat',
-        'auxiliary_heat',
+        'holiday',
       ]);
 
       props.capabilitiesOptions['thermostat_mode'] = {
